@@ -1,0 +1,107 @@
+/*General reset*/
+{margin:0;
+padding:0;
+box-sizing:border-box;}
+
+body {font-family: 'segoe UI' ,Arial, sans-serif;
+background-color:#fdf6e3;
+color:#333;}
+
+/*Header*/
+header {text-align:center;
+background:white;
+padding:10px;
+box-shadow: 0  2px 8px rgba(0,0,0,0,1);
+posistion: sticky;
+top: 0;}
+
+header h1 {color:#a67c52;
+margin-bottom: 10px;}
+
+
+/*Navigation*/
+nav ul {list-style: none;}
+
+nav ul li {display: flex;
+margin: 0  15px;}
+
+nav a {text-decoration: none;
+color: #333;
+font-weight: 500;
+transition: 0.3s;}
+
+nav a:hover {color: #a67c52;}
+
+/*Hero Section*/
+.hero {text-align:center;
+padding: 60px 20px;
+background: linear-gradient(rgba(0,0,0,0,4), rgba(0,0,0,0,4)), url('banner.jpg');
+background-size:cover;
+background-position:center;
+color:#a67c52;}
+
+.hero h2 {font-size: 36px;
+margin-bottom: 10px;}
+
+.hero p{font-size: 18px;}
+
+/*Section*/
+section {padding: 40px 20px;
+text-align: left;}
+
+section h2 {color:#a67c52;
+margin-bottom: 20px;}
+
+.grid{ display:grid;
+grid-template-columns:repeat(auto-fit.minmax(250px, 1fr));
+gap: 20px;}
+/*Images*/
+img {width: 250px;
+border-radius: 10px;
+margin: 15px;
+transition: transform 0.3s, box-shadow o.3s;}
+
+img:hover {tranform: scale(1.05);
+box-shadow: 0 8px 20px rgba(0,0,0,0.2);}
+
+/*Form*/
+form input, form textarea {width: 80%;
+max-width:400px;
+margin: 10px;
+padding: 12px;
+border-radius: 8px;
+border: 1px solid #ccc;}
+
+button { padding:12px 25px;
+background: #a67c52;
+color: white;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+transisition: 0.3s;}
+
+button:hover {background: #8c6239;}
+
+/*footer*/
+footer {justify-content: space-around;
+display:flex;
+flex-wrap: wrap;
+padding: 40px;
+background: #a67c52;
+color: white;}
+
+.footer-section {margin: 10px;
+min-width: 200px;}
+.footer input {padding: 8px;
+margin-top: 5px;}
+
+/*Responsive Design*/
+@media (max-width: 768px){
+nav ul li{ display:block;
+margin: 10px;}
+
+img {width: 100%;}
+
+.hero 2 {font-size: 26px;}
+}
+
